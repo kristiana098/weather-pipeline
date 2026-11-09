@@ -26,10 +26,9 @@ Requirements:
 """
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}]
-    )
-
+    model="gemma2-9b-it",
+    messages=[{"role": "user", "content": prompt}]
+)
     poem = response.choices[0].message.content
 
     # Save to HTML
