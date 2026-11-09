@@ -26,9 +26,10 @@ Requirements:
 """
 
     response = client.chat.completions.create(
-    model="gemma2-9b-it",
+    model="openai/gpt-oss-20b",
     messages=[{"role": "user", "content": prompt}]
 )
+
     poem = response.choices[0].message.content
 
     # Save to HTML
