@@ -24,11 +24,10 @@ Requirements:
 - Say where it is nicest to be tomorrow
 - Write in English and Danish
 """
-
-    response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[{"role": "user", "content": prompt}]
-    )
+response = client.chat.completions.create(
+    model="llama-3.3-70b-versatile",
+    messages=[{"role": "user", "content": prompt}]
+)
 
     poem = response.choices[0].message.content
 
